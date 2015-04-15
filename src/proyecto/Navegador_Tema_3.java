@@ -35,6 +35,7 @@ import net.sf.nwn.loader.NWNLoader;
 /**
  *
  * @author Adrian Portillo
+ * This is the main class. The teacher gave us some inspiration, methods and classes. If you don't understand anything, go and ask me at Github.
  */
 public class Navegador_Tema_3 extends JFrame implements Runnable {
 

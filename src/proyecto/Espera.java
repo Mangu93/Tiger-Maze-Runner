@@ -43,6 +43,7 @@ class Espera extends Thread {
             }
             if (figura.nombre.contains("Caballero")) {
                 figura.inicializar(0, -100, 0);
+                figura.mostrar();
             }
             if (figura.nombre.equals("Jaguar")) {
                 synchronized (this) {

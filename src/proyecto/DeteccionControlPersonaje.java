@@ -50,7 +50,6 @@ public class DeteccionControlPersonaje extends javax.media.j3d.Behavior {
                         KeyEvent ek = (KeyEvent) events[n];
                         if (ek.getID() == KeyEvent.KEY_PRESSED && TeclaPresionada != ek.getKeyCode() && !personaje.muerto) {
                             TeclaPresionada = ek.getKeyCode();
-
                             if (ek.getKeyCode() == 38) {
                                 this.andando = true;
                                 personaje.adelante = true;
@@ -107,7 +106,6 @@ public class DeteccionControlPersonaje extends javax.media.j3d.Behavior {
 
                                 }
                             }
-
                             if (ek.getKeyChar() == 's') {
                                 if (!personaje.golpeando) {
                                     personaje.golpeando = true;
@@ -143,7 +141,6 @@ public class DeteccionControlPersonaje extends javax.media.j3d.Behavior {
                             }
                             if (ek.getKeyCode() == 39) {          //Derecha
                                 personaje.derecha = false;
-
                             }
                             if (ek.getKeyCode() == 40) {    //Atras                           
                                 personaje.atras = false;
