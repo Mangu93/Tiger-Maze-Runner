@@ -57,6 +57,7 @@ public class Navegador_Tema_3 extends JFrame implements Runnable {
     boolean totem2_eliminado;
     JuegoCanvas zonaDibujo;
     public boolean boss_is_dead = false;
+    public ArrayList<String> creatures_dead = new ArrayList<String>();
 
     public Navegador_Tema_3() {
 
@@ -506,6 +507,7 @@ public class Navegador_Tema_3 extends JFrame implements Runnable {
         Navegador_Tema_3 x = new Navegador_Tema_3();
         x.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         x.setSize(1024, 768);
+        x.setTitle("Tiger Maze Runner");
         x.setVisible(true);
         x.colocarCamara(x.universo, new Point3d(x.personaje.posiciones[0], 5, x.personaje.posiciones[2]), new Point3d(0, 0, 0));
         x.run();

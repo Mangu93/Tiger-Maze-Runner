@@ -144,6 +144,7 @@ public class Figura {
                 if (listaObjetos.get(9).vida == 0 && !listaObjetos.get(9).muerto) {
                     listaObjetos.get(9).muerto = true;
                     ab.playAnimation("a_ba_med_weap:kdfntdie", false);
+                    x.creatures_dead.add(listaObjetos.get(9).nombre + " ha muerto");
                     Espera espera = new Espera(listaObjetos.get(9), 1000, listaObjetos.get(9).muerto);
                     espera.start();
                 }
@@ -161,6 +162,7 @@ public class Figura {
                 if (listaObjetos.get(10).vida == 0 && !listaObjetos.get(10).muerto) {
                     listaObjetos.get(10).muerto = true;
                     ab.playAnimation("a_ba_med_weap:kdfntdie", false);
+                    x.creatures_dead.add(listaObjetos.get(10).nombre + " ha muerto");
                     Espera espera = new Espera(listaObjetos.get(10), 1000, listaObjetos.get(10).muerto);
                     espera.start();
                 }
@@ -177,6 +179,7 @@ public class Figura {
                 ab = (AnimationBehavior) listaObjetos.get(11).escena.getNamedObjects().get("AnimationBehavior");
                 if (listaObjetos.get(11).vida == 0 && !listaObjetos.get(11).muerto) {
                     listaObjetos.get(11).muerto = true;
+                    x.creatures_dead.add(listaObjetos.get(11).nombre + " ha muerto");
                     ab.playAnimation("a_ba_med_weap:kdfntdie", false);
                     Espera espera = new Espera(listaObjetos.get(11), 1000, listaObjetos.get(11).muerto);
                     espera.start();
