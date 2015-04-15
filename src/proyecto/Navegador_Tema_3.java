@@ -50,7 +50,7 @@ public class Navegador_Tema_3 extends JFrame implements Runnable {
     Float distancia;
     Muro jaula1Ladocorto1;
     Muro jaula2Ladocorto2;
-    BranchGroup objRoot, objTxt;
+    BranchGroup objRoot;
     Appearance aparienciaM;
     BranchGroup totem1;
     BranchGroup totem2;
@@ -447,7 +447,6 @@ public class Navegador_Tema_3 extends JFrame implements Runnable {
             //se asume que PuntoPosicionActual es el Punto3d donde está el Personaje (o su cabeza)
             PickTool localizador = new PickTool(objMuros);        
             localizador.setMode(PickTool.GEOMETRY_INTERSECT_INFO);
-            //PickTool.setCapabilities(objMuros, PickTool.INTERSECT_TEST);
             Vector3d direccionAexplorar = new Vector3d(personaje.posiciones[0], 0, personaje.posiciones[2]);
             Point3d PuntoPosicionActual = new Point3d(personaje.posiciones[0] +2, personaje.posiciones[1], personaje.posiciones[2]);
             localizador.setShapeRay(PuntoPosicionActual, direccionAexplorar);

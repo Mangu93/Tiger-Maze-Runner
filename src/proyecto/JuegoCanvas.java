@@ -43,7 +43,7 @@ public class JuegoCanvas extends Canvas3D {
         if (juego.totem2_eliminado) {
         gd.drawString("Ya tienes las dos venus, ve a por el jefe", POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL * 6);
         }*/
-        if (!juego.totem1_eliminado) gd.drawString("Venus recogidas: 0", POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL *5);
+        if (!juego.totem1_eliminado) gd.drawString("Venus recogidas : 0", POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL *5);
         if (juego.totem1_eliminado && (!juego.totem2_eliminado)) gd.drawString("Venus recogidas: 1", POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL *5);
         if (juego.totem1_eliminado && juego.totem2_eliminado) gd.drawString("Venus recogidas: 2", POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL *5);
         gd.drawString("Caballeros eliminados : " + juego.creatures_dead.size(), POSICION_VIDA_VERTICAL, POSICION_VIDA_HORIZONTAL *6);

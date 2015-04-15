@@ -233,4 +233,5 @@ public class Figura {
         inip.set(new Vector3f(posiciones[0], posiciones[1], posiciones[2]));
         desplazamientoFigura.setTransform(inip);
     }
+
 }
